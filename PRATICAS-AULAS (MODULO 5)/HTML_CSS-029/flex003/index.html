@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      div.container {
+        background-color: lightsalmon;
+        /* Container Flexível */
+        display: flex;
+
+        /* Linha em ROW Direita para Esquerda */
+        /* flex-direction: row; */
+
+        /* Linha em ROW Esquerda para Direita */
+        /* flex-direction: row-reverse; */
+        
+        /* Adaptação SEM quebra em NOWRAP */
+        /* flex-wrap: nowrap; */
+
+        /* Adaptação COM quebra em WRAP */
+        /* flex-wrap: wrap; */
+
+        /* Adaptação COM quebra REVERSA em WRAP-REVERSE */
+        /* flex-wrap: wrap-reverse; */
+
+        /* FLEX-DIRECTION + FLEX-WARP = FLEX-FLOW (ATALHO / SHORTHAND) */
+        /* flex-flow: row nowrap; */
+
+        /* flex-flow: row wrap; */
+
+        flex-flow: row wrap-reverse;
+        
+      }
+
+      div.item {
+        background-color: lightblue;
+        border: 1px solid black;
+        text-align: center;
+
+        /* FORÇA OCUPAR OS ESPAÇOS VAZIOS */
+        flex: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Exemplo de Bloco A</div>
+      <div class="item">Exemplo de Bloco B</div>
+      <div class="item">Exemplo de Bloco C</div>
+      <div class="item">Exemplo de Bloco D</div>
+      <div class="item">Exemplo de Bloco E</div>
+      <div class="item">Exemplo de Bloco F</div>
+      <div class="item">Exemplo de Bloco G</div>
+    </div>
+  </body>
+</html>
